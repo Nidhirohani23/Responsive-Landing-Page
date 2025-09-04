@@ -1,0 +1,108 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navigation Bar */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 123, 255, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+nav.scrolled {
+    background-color: rgba(255, 99, 71, 0.9);
+}
+
+nav .logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #fff;
+    color: #007bff;
+}
+
+/* Sections */
+.section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+
+.landing {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+
+.about {
+    background: linear-gradient(135deg, #ff6a00, #ee0979);
+}
+
+.services {
+    background: linear-gradient(135deg, #43cea2, #185a9d);
+}
+
+.contact {
+    background: linear-gradient(135deg, #f7971e, #ffd200);
+}
+
+/* Buttons */
+.btn {
+    padding: 10px 25px;
+    background-color: #fff;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Responsive Menu */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
